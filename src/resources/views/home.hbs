@@ -3,12 +3,14 @@
     {{#each courses}}
       <div class="col-sm-6 col-lg-4 mb-3">
         <div class="card">
-          <img
-            class="card-img-top"
-            src="{{this.image}}"
-            alt="{{this.name}}"
-            height="200px"
-          />
+          <a href="/courses/{{this.slug}}">
+            <img
+              class="card-img-top"
+              src="{{this.image}}"
+              alt="{{this.name}}"
+              height="200px"
+            />
+          </a>
           <div class="card-body">
             <h5 class="card-title">{{this.description}}</h5>
             <p class="card-text"><small class="text-muted">Buy Course</small></p>
